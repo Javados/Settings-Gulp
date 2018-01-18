@@ -1,0 +1,35 @@
+1) Download and install node.js  
+
+
+2) Install Gulp global
+npm install --global gulp-cli
+or
+npm i -g gulp
+
+
+3) Create a package.json in project directory
+npm init
+
+4)Install Gulp in project local
+npm i gulp --save-dev
+
+
+5) Create a gulpfile - gulpfile.js
+--------------------------------------
+*************An example of a task to compile a stylus**********************
+var gulp = require('gulp'),
+	stylus = require('gulp-stylus');
+
+gulp.task('stil', function () {
+  return gulp.src('css/style.styl')
+    .pipe(stylus())
+    .pipe(gulp.dest('css/'));
+});
+
+gulp.task('watch', function(){
+	gulp.watch('css/*.styl', ['stil']);
+});
+-------------------------------------
+
+
+6)
