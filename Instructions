@@ -28,7 +28,8 @@ var gulp = require('gulp');
 ********************************** Gulp Plugins **************************************************
 
 
-1) gulp-autoprefixer --   npm install --save-dev gulp-autoprefixer 
+1) gulp-autoprefixer --
+npm install --save-dev gulp-autoprefixer 
 
 var autoprefixer = require('gulp-autoprefixer');
 gulp.task('default', () =>
@@ -41,7 +42,8 @@ gulp.task('default', () =>
 );
 
 
-2) browsersync --    npm install -g browser-sync
+2) browsersync --
+npm install -g browser-sync
 
 *start browsersync static*                          
                             --   browser-sync start --server --files "css/*.css"
@@ -51,7 +53,8 @@ gulp.task('default', () =>
 
 
 
-3) gulp-clean-css --     npm install gulp-clean-css --save-dev
+3) gulp-clean-css --
+npm install gulp-clean-css --save-dev
 
 var cleanCSS = require('gulp-clean-css');
 gulp.task('minify-css', () => {
@@ -62,13 +65,15 @@ gulp.task('minify-css', () => {
 
 
 
-4) pump  --     npm install pump
+4) pump  --
+npm install pump
 
 var pump = require('pump');
 
 
 
-5) gulp-uglify --   npm install --save-dev gulp-uglify
+5) gulp-uglify --
+npm install --save-dev gulp-uglify
 
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
